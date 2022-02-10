@@ -45,16 +45,47 @@
             }
         };    
     </script>
+    <!-- PAGINA -->
     <body>
-        <!-- CARICA LA PAGINA SCELTA COME PRINCIPALE -->
-        <iframe 
-            src="./index/ita.html" 
-            frameborder="0"  
-            scrolling="yes" 
-            style="overflow:hidden; height:100%; width:100%; position: absolute; top: 0; left: 0; bottom: 0; right: 0;" 
-            height="100%" 
-            width="100%"> 
-        </iframe>
-        <!-- <div section-source="./index/ita.html"></div> -->
+        <!-- MENU -->
+        <div section-source="../menu/menu.html"></div>
+        <!-- TITOLO-->
+        <div section-source="../header/header.html"></div>
+        <!-- SLIDER -->
+        <div section-source="../slider/slider.html"></div>
+        <!-- SEZIONI -->
+        <div class="section">
+            <div class="pageitem">
+                <div class = "col">
+                    <div section-source="../pages/gruppo.html"></div>
+                </div>
+            </div>
+        <!--
+        </div>
+        <div class="section">
+            -->
+            <div class="pageitem">
+                <div class = "col">
+                    <div section-source="../pages/sede.html"></div>
+                </div>
+                <div class = "col">
+                    <div section-source="../pages/contatti.html"></div>
+                </div>
+            </div>
+            <div class="pageitem">
+                <div class = "col">
+                    <div section-source="../pages/iscrizioni.html"></div>
+                </div>
+                <div class = "col">
+                    <div section-source="../pages/documenti.html"></div>
+                </div>
+            </div>
+        </div>
+        <!-- CREDITI -->
+        <div section-source="../credits/credits.html"></div>
+        <!-- ESECUZIONE DELLO SCRIPT -->
+        <script>
+            includeHTML();
+        </script>
     </body>
 </html>
